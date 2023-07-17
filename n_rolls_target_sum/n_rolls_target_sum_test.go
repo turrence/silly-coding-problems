@@ -1,0 +1,44 @@
+package leetcode
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+func TestNRollsTargetSum(t *testing.T) {
+	t.Parallel()
+	testCases := []struct {
+		testName string
+		numDice     int
+		diceSides int
+		target	int
+		ans      int
+	}{
+		{
+			"basic",
+			1,
+			6,
+			3,
+			1,
+		},
+		{
+			"basic2",
+			2,
+			6,
+			7,
+			6,
+		},
+
+
+	}
+
+	for _, tc := range testCases {
+		tc := tc
+		t.Run(tc.testName, func(t *testing.T) {
+			t.Parallel()
+			res := nRollsTargetSum(tc.numDice, tc.diceSides, tc.target)
+			assert.Equal(t, tc.ans, res)
+		})
+	}
+}
