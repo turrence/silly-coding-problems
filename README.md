@@ -1,0 +1,1 @@
+These are just leetcode problems with solutions and explanations that I can understand. Every interview question that I can't do will proobably end up in here. 
