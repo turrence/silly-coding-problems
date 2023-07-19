@@ -9,11 +9,11 @@ import (
 func TestNRollsTargetSum(t *testing.T) {
 	t.Parallel()
 	testCases := []struct {
-		testName string
-		numDice     int
+		testName  string
+		numDice   int
 		diceSides int
-		target	int
-		ans      int
+		target    int
+		ans       int
 	}{
 		{
 			"basic",
@@ -29,8 +29,22 @@ func TestNRollsTargetSum(t *testing.T) {
 			7,
 			6,
 		},
+		{
+			"basic3",
+			3,
+			6,
+			13,
+			21,
+		},
 
-
+		// The answer must be returned modulo 10^9 + 7
+		{
+			"large number",
+			30,
+			30,
+			500,
+			222616187,
+		},
 	}
 
 	for _, tc := range testCases {
