@@ -6,7 +6,7 @@ import "math"
 
 //  The following solution is a greedy solution (Kadane's algorithm)
 // 1. Keep an ongoing sum currentSum of the array,
-//  		if currentSum reset it to 0
+//  		if currentSum < 0 reset it to 0
 // 				bc it could the array at that point would negatively contribute to the maxSum
 // 			update s (temp var) index to the current index for startIndex
 // 				why not update the ACTUAL startIndex?

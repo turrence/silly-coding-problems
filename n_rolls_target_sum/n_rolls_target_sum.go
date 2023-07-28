@@ -71,7 +71,7 @@ func dp(n, k, target int, cache map[[2]int]int) int {
 		return val
 	}
 
-	// dp(d, s, t) = dp(d-1, s, t-1) + dp(d-1, s, t-2) + dp(d-1, s, t-3) + ... + dp(d-1, s, t-s)
+	// dp(d, s, t) = dp(d-1, s, t-1) + dp(d-1, s, t-2) + dp(d-1, s, t-3) + ... + dp(d-1, s, t-s)_k
 	// WHERE DOES THE BASE CASE COME IN
 	for i := 1; i <= k; i++ {
 		// case when there is 1 dice

@@ -41,5 +41,5 @@ func (queue *MyQueue) Empty() bool {
 
 /*
 you did this in 10 mins congrats,
-	but it could have been faster if you just new syntax
+	but it could have been faster if you just knew syntax
 */
